@@ -29,13 +29,14 @@
 % Bibtex and biblatex
 \usepackage[
     backend=biber,
-    style=authoryear-icomp,
+    style=chem-angew,
     sortlocale=ch_FR,
     natbib=true,
     url=false, 
     doi=true,
     eprint=false
 ]{biblatex}
+\addbibresource{biblatex-res.bib}
 
 % Language
 \usepackage[english]{babel}
@@ -254,7 +255,12 @@ You can also import a file instead f inlining the code. See the minted documenta
 
 A new chapter will begin on a new page.
 
+Is there is a citation for \cite{hesso-latextemplate-pa}
+
 \blindtext
+
+% generate bibliography
+\printbibliography
 
 \end{document}
 
