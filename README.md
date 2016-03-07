@@ -1,6 +1,6 @@
 # HES-SO//Master Lab report LaTeX template
 
-A LaTeX template for HES-SO//Master Computer Science lab reports.
+A LaTeX template for HES-SO//Master Computer Science Deepening Project (PA)
 
 Authors:
 
@@ -19,6 +19,7 @@ Authors:
 ### Dependencies
 
 - A recent LaTeX distribution
+- Biblatex with biber backend
 - Python 2.7+ or 3+ and pygments (for the minted code highlighting package)
 
 ### Setup on OSX
@@ -43,6 +44,13 @@ Authors:
 If you use Linux, you're used to not having precise instructions. Just do it!
 
 More seriously, the only pain point is probably the old package versions if you use an inferior distribution whose repository has an old version of TeXLive. We recommend to install TexLive manually in this case, or to use Arch.
+
+For Archlinux :
+
+        yaourt -S texlive-bin
+        yaourt -S texlive-core
+        yaourt -S texlive-latexextra
+        yaourt -S texlive-bibtexextra
 
 For Ubuntu 12.04+ users, this repository might be useful:
 
@@ -75,5 +83,4 @@ The followin contributions would be welcome:
 
 - Separation in several files (WIP):
     * `preamble.tex`: package imports and configuration
-    * (done) `metadata.tex`: lab information (Course name, students, ...)
     * (done) `report.tex`: title page and content
