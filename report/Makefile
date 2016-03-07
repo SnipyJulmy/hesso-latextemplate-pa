@@ -1,6 +1,6 @@
 TEX = pdflatex -shell-escape -interaction=nonstopmode -file-line-error
 BIB = biber
-NAME = report
+NAME = __report__
 TEXFILE = ${NAME}.tex
 PDFFILE = ${NAME}.pdf
 BCFFILE = ${NAME}.bcf
@@ -12,7 +12,8 @@ all : ${PDFFILE}
 ${PDFFILE} : ${TEXFILE}
 	${TEX} ${NAME}
 	${BIB} ${NAME}
-	${TEX} ${NAME} # run twice for labels etc
+	${TEX} ${NAME} 
+	${TEX} ${NAME} 
 
 clean : 
 	@rm *.bbl || true

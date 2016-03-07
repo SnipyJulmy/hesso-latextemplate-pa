@@ -112,12 +112,8 @@ def setup_makefile(destination_dir, report_name):
 
     # -- Replace contents
     contents = contents.replace(
-        'report.pdf',
-        "{}.pdf".format(report_name)
-    )
-    contents = contents.replace(
-        'report.tex',
-        "{}.tex".format(report_name)
+        '__report__',
+        "{}".format(report_name)
     )
 
     # -- Write Makefile
